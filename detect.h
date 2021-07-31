@@ -18,7 +18,6 @@
 #define SANDBOX_USER L"WDAGUtilityAccount"
 #define SANDBOX_LOGON_CMD L"cmd /C wmic useraccount where \"name='WDAGUtilityAccount'\" set PasswordExpires=FALSE"
 #define SANDBOX_DNS_SUFFIX L"mshome.net"
-#define SANDBOX_WD_OFFICE_FMT L"%s:\\\\OfficePackagesForWDAG"
 #define SANDBOX_MOUNT_DRIV_FMT L"%s\\drivers\\mountmgr.sys"
 #define SANDBOX_STATE_DEV L"\\??\\C:\\WcSandboxState"
 
@@ -36,7 +35,6 @@
 BOOL wsb_detect_username(VOID);
 BOOL wsb_detect_proc(VOID);
 BOOL wsb_detect_suffix(VOID);
-BOOL wsb_detect_office(VOID);
 BOOL wsb_detect_dev(VOID);
 BOOL wsb_detect_genuine(VOID);
 BOOL wsb_detect_cmd(VOID);
